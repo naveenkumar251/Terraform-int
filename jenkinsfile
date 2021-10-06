@@ -15,7 +15,7 @@ pipeline{
       steps{
         sh returnStatus: true, script: 'terraform apply -auto-approve'
         steps{
-        groovyFunction("${params.VMName(name)}")
+        groovyFunction("${params.VMName}")
         }
       }
     }
