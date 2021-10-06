@@ -2,7 +2,7 @@
         profile = "default"
         region  = "us-east-1"
   }
-resource "aws_instance" "name" {
+resource "aws_instance" {
   ami           = "ami-5b41123e"
   instance_type = "t2.micro"
   subnet_id = "subnet-06f06aa686014295b"
