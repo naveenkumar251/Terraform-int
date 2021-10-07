@@ -1,3 +1,3 @@
 variable "name1" {
-  default = ""
+  type = string
 }
