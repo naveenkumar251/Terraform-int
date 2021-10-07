@@ -7,6 +7,6 @@ resource "aws_instance" "myec2" {
   instance_type = "t2.micro"
   subnet_id = "subnet-06f06aa686014295b"
   }
-tags {
-     name = "var.name1"
+tags  = {
+     Name = "var.name1"
   }
