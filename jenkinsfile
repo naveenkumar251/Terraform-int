@@ -13,9 +13,8 @@ pipeline{
      }
     stage('terraform apply'){
       steps{
-        echo "$params.VMName"
         sh returnStatus: true, script: 'terraform apply -var 'name1=newdb_u11' -auto-approve'
-        echo "$params.VMName"
+        
         }
     }
   }
