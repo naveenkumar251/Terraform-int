@@ -13,7 +13,7 @@ pipeline{
      }
     stage('terraform apply'){
       steps{
-        sh returnStatus: true, script: 'terraform apply -var="$params.VMName" -auto-approve'
+        sh returnStatus: true, script: 'terraform apply -var = "$params.VMName" -auto-approve'
         echo "$params.VMName"
         }
     }
