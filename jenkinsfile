@@ -1,6 +1,6 @@
 pipeline{
   agent any
-  stages{
+    stages{
     stage('terraform init'){
       steps{
         sh "terraform init"
@@ -14,10 +14,8 @@ pipeline{
     stage('terraform apply'){
       steps{
         sh returnStatus: true, script: 'terraform apply -auto-approve'
-        steps{
-        groovyFunction("${params.VMName}")
+        echo "$params.VMName"
         }
-      }
     }
   }
 }
