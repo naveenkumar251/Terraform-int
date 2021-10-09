@@ -1,4 +1,4 @@
-variable "name1" {
+variable "ec2name" {
   type = string
-  name1 = "dbserveru11"
+  ec2name = "dbserveru11"
 }
