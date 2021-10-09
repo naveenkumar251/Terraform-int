@@ -8,7 +8,7 @@ resource "aws_instance" "myec2" {
   subnet_id = "subnet-06f06aa686014295b"
  Name = "var.ec2name"
   
-#tags  = {
- #    Name = "var.ec2name"
- # }
+tags  = {
+     Name = "var.ec2name"
+  }
  }
