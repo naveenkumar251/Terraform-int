@@ -13,7 +13,7 @@ pipeline{
      }
     stage('terraform apply'){
       steps{
-        sh returnStatus: true, script: 'terraform apply -var='name1=dbseru11' -auto-approve'
+        sh returnStatus: true, script: 'terraform apply -var 'name1=dbseru11' -auto-approve'
         
         }
     }
